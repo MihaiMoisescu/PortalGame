@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalA
       objectReference: {fileID: 0}
+    - target: {fileID: 4306367255719410351, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
+      propertyPath: m_TagString
+      value: PortalA
+      objectReference: {fileID: 0}
     - target: {fileID: 7306934588748826597, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
       propertyPath: m_Name
       value: ACam
@@ -28,6 +32,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 30f1cb985306bf34c9656cc8c74c5c22, type: 2}
+    - target: {fileID: 8112805107133960926, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
+      propertyPath: m_Name
+      value: APos
+      objectReference: {fileID: 0}
     - target: {fileID: 8547045497106284909, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

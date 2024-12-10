@@ -12,9 +12,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalB
       objectReference: {fileID: 0}
+    - target: {fileID: 4306367255719410351, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
+      propertyPath: m_TagString
+      value: PortalB
+      objectReference: {fileID: 0}
     - target: {fileID: 7306934588748826597, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
       propertyPath: m_Name
       value: BCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671679184005117076, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7671679184005117076, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -24,6 +32,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 45117f8a871fdf449969423964afbc4b, type: 2}
+    - target: {fileID: 8112805107133960926, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
+      propertyPath: m_Name
+      value: BPos
+      objectReference: {fileID: 0}
     - target: {fileID: 8547045497106284909, guid: 7dc3c5fca75f6d34d8ead304183e612d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
