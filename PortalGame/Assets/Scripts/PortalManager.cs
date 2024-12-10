@@ -1,28 +1,59 @@
-using System;
 using UnityEngine;
 
 public class PortalManager : MonoBehaviour
 {
-    public Transform APos;
-    public Transform BPos;
+    private Transform APos; 
+    private Transform BPos; 
+
+    private bool isTeleporting = false; 
+    public float teleportCooldown = 0.5f; 
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.CompareTag("PortalA"))
+        if (isTeleporting) return;
+
+        FindPortals();
+
+        if (col.CompareTag("PortalA") && BPos != null)
         {
-            CharacterController cc = GetComponent<CharacterController>();
-            cc.enabled = false;
-            transform.position = BPos.transform.position;
-            transform.rotation = new Quaternion(transform.rotation.x, BPos.rotation.y, transform.rotation.z, transform.rotation.w);
-            cc.enabled = true;
+            StartCoroutine(TeleportPlayer(BPos));
         }
-        if (col.CompareTag("PortalB"))
+        else if (col.CompareTag("PortalB") && APos != null)
         {
-            CharacterController cc = GetComponent<CharacterController>();
-            cc.enabled = false;
-            transform.position = APos.transform.position;
-            transform.rotation = new Quaternion(transform.rotation.x, APos.rotation.y, transform.rotation.z, transform.rotation.w);
-            cc.enabled = true;
+            StartCoroutine(TeleportPlayer(APos));
         }
+    }
+
+    private System.Collections.IEnumerator TeleportPlayer(Transform targetPortal)
+    {
+        isTeleporting = true; 
+
+        CharacterController cc = GetComponent<CharacterController>();
+
+        cc.enabled = false;
+
+        transform.position = targetPortal.position;
+        transform.rotation = Quaternion.Euler(
+            transform.rotation.eulerAngles.x,
+            targetPortal.rotation.eulerAngles.y,
+            transform.rotation.eulerAngles.z
+        );
+
+        cc.enabled = true;
+
+        yield return new WaitForSeconds(teleportCooldown);
+        isTeleporting = false;
+    }
+
+    private void FindPortals()
+    {
+        GameObject portalA = GameObject.FindGameObjectWithTag("PortalA");
+        GameObject portalB = GameObject.FindGameObjectWithTag("PortalB");
+
+        if (portalA != null)
+            APos = portalA.transform;
+
+        if (portalB != null)
+            BPos = portalB.transform;
     }
 }
