@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8427877283367010129}
   - component: {fileID: 434262086909989947}
   - component: {fileID: 3574814554866753967}
+  - component: {fileID: 7617363116734867048}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -168,8 +169,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac8096eb4b96f26498076cd381782923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  APos: {fileID: 0}
-  BPos: {fileID: 0}
+  teleportCooldown: 0.5
+--- !u!114 &7617363116734867048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975877459504982353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2507d8723e16e24295a80bb1f13df5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathSound: {fileID: 8300000, guid: 80f3840f73f303f4bb04f626a0576615, type: 3}
 --- !u!1 &5403606662875999350
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,10 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    
     [Header("Movement Settings")]
     public float speed = 5.0f;
     public float jumpHeight = 2.0f;
@@ -13,10 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private bool isGrounded;
-
     private Transform cameraTransform;
     private float xRotation = 0f;
-
     void Start()
     {
         controller = GetComponent<CharacterController>();

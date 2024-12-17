@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PortalA
   - PortalB
+  - Wall
+  - Lava
+  - OpenFirstDoor
   layers:
   - Default
   - TransparentFX
