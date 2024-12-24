@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\scripts\\playerdoorinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdoorinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\assets\\scripts\\playerdeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\scripts\\playerdoorinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdoorinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlayerDoorInteraction.cs",
               "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\PlayerDoorInteraction.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerDoorInteraction.cs",
               "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\PlayerDoorInteraction.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerDoorInteraction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T19:24:24.204Z",
               "EditorCaption": ""
@@ -81,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Door.cs",
               "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\Door.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
-              "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\Door.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\Door.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAnAAAAAAAAAA==",
+              "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\Door.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Door.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T19:03:01.167Z",
               "EditorCaption": ""
@@ -100,7 +100,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerDeath.cs",
               "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\PlayerDeath.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerDeath.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T18:15:24.224Z",
               "EditorCaption": ""
