@@ -6,11 +6,19 @@ public class PortalManager : MonoBehaviour
     private Transform BPos;
 
     private bool isTeleporting = false;
-    public float teleportCooldown = 0.5f;
+    [SerializeField]
+    private float teleportCooldown = 0.5f;
+
+    private CapsuleCollider playerCollider;
+
+    private void Start()
+    {
+        playerCollider = GetComponentInChildren<CapsuleCollider>();
+    }
 
     private void OnTriggerEnter(Collider col)
     {
-        if (isTeleporting) return;
+        if (!col || isTeleporting) return;
 
         FindPortals();
 
@@ -29,21 +37,29 @@ public class PortalManager : MonoBehaviour
         isTeleporting = true;
 
         CharacterController cc = GetComponent<CharacterController>();
+        if (cc != null) cc.enabled = false;
 
-        cc.enabled = false;
+        Vector3 targetPosition = targetPortal.position;
 
-        transform.position = targetPortal.position;
-        transform.rotation = Quaternion.Euler(
-            transform.rotation.eulerAngles.x,
-            targetPortal.rotation.eulerAngles.y,
-            transform.rotation.eulerAngles.z
-        );
+        if (Mathf.Abs(Vector3.Dot(targetPortal.up, Vector3.up)) < 0.5f)
+        {
+            targetPosition += targetPortal.up * 1.5f;
+        }
 
-        cc.enabled = true;
+        transform.position = targetPosition;
+
+        Vector3 targetForward = targetPortal.forward;
+        targetForward.y = 0;
+        targetForward.Normalize();
+
+        transform.rotation = Quaternion.LookRotation(targetForward, Vector3.up);
+
+        if (cc != null) cc.enabled = true;
 
         yield return new WaitForSeconds(teleportCooldown);
         isTeleporting = false;
     }
+
 
     private void FindPortals()
     {
