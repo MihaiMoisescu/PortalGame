@@ -52,6 +52,23 @@ ExportedObj/
 *.pdb.meta
 *.mdb.meta
 
+# Rider files
+.idea/
+Assets/Plugins/Editor/JetBrains*
+
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
 # Unity3D generated file on crash reports
 sysinfo.txt
 
