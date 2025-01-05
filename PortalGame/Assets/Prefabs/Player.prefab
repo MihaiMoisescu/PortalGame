@@ -367,7 +367,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalAPrefab: {fileID: 4535739403262957234, guid: 4881bca0ba51dbf4cb4035712e013f5e, type: 3}
   portalBPrefab: {fileID: 143155751742628277, guid: e9111c8cf7bfb88499c05bec5c442ebf, type: 3}
-  spawnDistance: 10
+  portalAOrbPrefab: {fileID: 111136925433684864, guid: 7a93f274fa4dfe44cbb0f88c8776359b, type: 3}
+  portalBOrbPrefab: {fileID: 9104737082330760555, guid: 574ec587fc1a78f49a2c33924b7609ac, type: 3}
+  portalSurfaceLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1001 &68149409945419170
 PrefabInstance:
   m_ObjectHideFlags: 0

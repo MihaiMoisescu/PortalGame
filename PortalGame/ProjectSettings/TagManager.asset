@@ -10,6 +10,7 @@ TagManager:
   - Lava
   - OpenFirstDoor
   - Coin
+  - PortalOrb
   layers:
   - Default
   - TransparentFX

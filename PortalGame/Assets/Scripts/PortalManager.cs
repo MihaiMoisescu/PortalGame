@@ -20,6 +20,8 @@ public class PortalManager : MonoBehaviour
     {
         if (!col || isTeleporting) return;
 
+        if (col.CompareTag("PortalOrb")) return;
+
         FindPortals();
 
         if (col.CompareTag("PortalA") && BPos != null)
