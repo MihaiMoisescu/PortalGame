@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class PortalManager : MonoBehaviour
 {
-    private Transform APos; 
-    private Transform BPos; 
+    private Transform APos;
+    private Transform BPos;
 
-    private bool isTeleporting = false; 
-    public float teleportCooldown = 0.5f; 
+    private bool isTeleporting = false;
+    public float teleportCooldown = 0.5f;
 
     private void OnTriggerEnter(Collider col)
     {
@@ -26,7 +26,7 @@ public class PortalManager : MonoBehaviour
 
     private System.Collections.IEnumerator TeleportPlayer(Transform targetPortal)
     {
-        isTeleporting = true; 
+        isTeleporting = true;
 
         CharacterController cc = GetComponent<CharacterController>();
 

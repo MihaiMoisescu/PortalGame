@@ -3,13 +3,16 @@ using UnityEngine;
 public class PortalSpawner : MonoBehaviour
 {
     public GameObject portalAPrefab;
-    public GameObject portalBPrefab; 
-    public float spawnDistance = 10f; 
+    public GameObject portalBPrefab;
+    public float spawnDistance = 10f;
 
     private GameObject currentPortalA;
-    private GameObject currentPortalB; 
+    private GameObject currentPortalB;
 
     private Camera mainCamera;
+
+    [SerializeField]
+    public LayerMask portalSurfaceLayer;
 
     void Start()
     {
@@ -18,12 +21,12 @@ public class PortalSpawner : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) 
+        if (Input.GetMouseButtonDown(0))
         {
             SpawnOrMovePortal(ref currentPortalA, portalAPrefab);
         }
 
-        if (Input.GetMouseButtonDown(1)) 
+        if (Input.GetMouseButtonDown(1))
         {
             SpawnOrMovePortal(ref currentPortalB, portalBPrefab);
         }
@@ -32,40 +35,21 @@ public class PortalSpawner : MonoBehaviour
     void SpawnOrMovePortal(ref GameObject currentPortal, GameObject portalPrefab)
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity))
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, portalSurfaceLayer))
         {
-            Vector3 directionToCamera = (mainCamera.transform.position - hitInfo.point).normalized;
+            Vector3 portalNormal = hitInfo.normal;
+            Quaternion portalRotation = Quaternion.LookRotation(portalNormal);
 
-            Quaternion portalRotation = Quaternion.LookRotation(directionToCamera);
-
-            if (currentPortal != null)
+            if (currentPortal == null)
+            {
+                currentPortal = Instantiate(portalPrefab, hitInfo.point, portalRotation);
+            }
+            else
             {
                 currentPortal.transform.position = hitInfo.point;
                 currentPortal.transform.rotation = portalRotation;
             }
-            else
-            {
-                currentPortal = Instantiate(portalPrefab, hitInfo.point, portalRotation);
-            }
-        }
-        else
-        {
-            Vector3 spawnPosition = mainCamera.transform.position + mainCamera.transform.forward * spawnDistance;
-
-            Vector3 directionToCamera = (mainCamera.transform.position - spawnPosition).normalized;
-
-            Quaternion portalRotation = Quaternion.LookRotation(directionToCamera);
-
-            if (currentPortal != null)
-            {
-                currentPortal.transform.position = spawnPosition;
-                currentPortal.transform.rotation = portalRotation;
-            }
-            else
-            {
-                currentPortal = Instantiate(portalPrefab, spawnPosition, portalRotation);
-            }
         }
     }
-
 }
