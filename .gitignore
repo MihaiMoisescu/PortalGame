@@ -28,6 +28,12 @@ sysinfo.txt
 *.pidb
 .DS_Store
 
+
+# Rider files
+.idea/
+Assets/Plugins/Editor/JetBrains*
+
+
 ###
 # OS generated
 ###
