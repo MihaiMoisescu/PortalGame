@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Lava
   - OpenFirstDoor
+  - Coin
   layers:
   - Default
   - TransparentFX
