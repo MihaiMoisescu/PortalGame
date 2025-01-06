@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3574814554866753967}
   - component: {fileID: 7617363116734867048}
   - component: {fileID: 6561000234112565763}
+  - component: {fileID: 1499180255146668387}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -197,6 +198,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d3ac6a46aab1e4d98c2ef038f677cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinText: {fileID: 0}
+--- !u!114 &1499180255146668387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975877459504982353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd260b923df2314d9c0fcfc6570dfff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _FirstDoor: {fileID: 0}
+  _SecondDoor: {fileID: 0}
+  _ThirdDoor: {fileID: 0}
+  _PickUpCoin: {fileID: 0}
 --- !u!1 &5403606662875999350
 GameObject:
   m_ObjectHideFlags: 0

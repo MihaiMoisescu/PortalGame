@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerDoorInteraction : MonoBehaviour
+public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private GameObject _FirstDoor;
     [SerializeField] private GameObject _SecondDoor;
@@ -35,6 +36,10 @@ public class PlayerDoorInteraction : MonoBehaviour
         if (other.CompareTag("Finish") && _PickUpCoin.CoinCounter == 12)
         {
             _thirdDoor.OpenDoor();
+        }
+        if (other.CompareTag("FinishLevel2") && _PickUpCoin.CoinCounter == 4)
+        {
+            SceneManager.LoadScene("FinishGame");
         }
     }
 

@@ -1,28 +1,29 @@
+﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickUpCoin : MonoBehaviour
 {
     private int coinCounter = 0;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private TextMeshProUGUI coinText;
+    public int CoinCounter { get => coinCounter; }
+    private void Start()
     {
-
+        UpdateCoinUI();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    public int CoinCounter { get => coinCounter; set => coinCounter = value; }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coin"))
         {
             coinCounter++;
-            Destroy(other.gameObject);
+            UpdateCoinUI();
+            Destroy(other.gameObject); 
         }
+    }
+
+    private void UpdateCoinUI()
+    {
+        coinText.text = "Coins: " + coinCounter.ToString();
     }
 }

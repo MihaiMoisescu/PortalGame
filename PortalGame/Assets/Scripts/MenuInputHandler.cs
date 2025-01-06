@@ -4,11 +4,6 @@ using UnityEngine.SceneManagement;
 public class MenuInputHandler : MonoBehaviour
 {
     [SerializeField] private string _MenuSceneName;
-    void Start()
-    {
-
-    }
-
 
     void Update()
     {
@@ -16,7 +11,7 @@ public class MenuInputHandler : MonoBehaviour
         {
             if (_MenuSceneName != SceneManager.GetActiveScene().name)
             {
-                SceneManager.LoadScene(_MenuSceneName);
+                SceneManager.LoadSceneAsync(_MenuSceneName);
             }
             else
             {
