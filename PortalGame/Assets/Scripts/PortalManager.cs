@@ -6,8 +6,12 @@ public class PortalManager : MonoBehaviour
     private Transform BPos;
 
     private bool isTeleporting = false;
+
     [SerializeField]
     private float teleportCooldown = 0.5f;
+
+    [SerializeField]
+    private bool isPlayer = false;
 
     private CapsuleCollider playerCollider;
 
@@ -26,11 +30,17 @@ public class PortalManager : MonoBehaviour
 
         if (col.CompareTag("PortalA") && BPos != null)
         {
-            StartCoroutine(TeleportPlayer(BPos));
+            if(isPlayer)
+                StartCoroutine(TeleportPlayer(BPos));
+            else
+                StartCoroutine(TeleportObject(BPos));
         }
         else if (col.CompareTag("PortalB") && APos != null)
         {
-            StartCoroutine(TeleportPlayer(APos));
+            if (isPlayer)
+                StartCoroutine(TeleportPlayer(APos));
+            else
+                StartCoroutine(TeleportObject(APos));
         }
     }
 
@@ -62,6 +72,32 @@ public class PortalManager : MonoBehaviour
         isTeleporting = false;
     }
 
+    private System.Collections.IEnumerator TeleportObject(Transform targetPortal)
+    {
+        isTeleporting = true;
+
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null) rb.isKinematic = true;
+
+        Vector3 targetPosition = targetPortal.position;
+
+        if (Mathf.Abs(Vector3.Dot(targetPortal.up, Vector3.up)) < 0.5f)
+        {
+            targetPosition += targetPortal.up * 1.5f;
+        }
+
+        transform.position = targetPosition;
+
+        Vector3 targetForward = targetPortal.forward;
+        targetForward.y = 0;
+        targetForward.Normalize();
+        transform.rotation = Quaternion.LookRotation(targetForward, Vector3.up);
+
+        if (rb != null) rb.isKinematic = false;
+
+        yield return new WaitForSeconds(teleportCooldown);
+        isTeleporting = false;
+    }
 
     private void FindPortals()
     {
