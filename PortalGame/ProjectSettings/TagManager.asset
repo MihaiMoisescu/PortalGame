@@ -11,6 +11,11 @@ TagManager:
   - OpenFirstDoor
   - Coin
   - PortalOrb
+  - Laser
+  - OpenThirdDoor
+  - HugeDoor
+  - SmallDoor
+  - OpenSecondDoor
   layers:
   - Default
   - TransparentFX

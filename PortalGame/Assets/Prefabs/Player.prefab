@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 434262086909989947}
   - component: {fileID: 3574814554866753967}
   - component: {fileID: 7617363116734867048}
+  - component: {fileID: 6561000234112565763}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -108,7 +109,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -183,6 +184,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSound: {fileID: 8300000, guid: 80f3840f73f303f4bb04f626a0576615, type: 3}
+--- !u!114 &6561000234112565763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975877459504982353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d3ac6a46aab1e4d98c2ef038f677cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5403606662875999350
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +345,7 @@ GameObject:
   - component: {fileID: 5704948361441854727}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

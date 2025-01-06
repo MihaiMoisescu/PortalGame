@@ -33,7 +33,7 @@ public class PlayerDeath : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Lava"))
+        if (other.gameObject.CompareTag("Lava")||other.gameObject.CompareTag("Laser"))
         {
            _playerMovement.enabled = false;
             Die(); 

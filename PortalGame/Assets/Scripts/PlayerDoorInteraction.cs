@@ -5,16 +5,20 @@ public class PlayerDoorInteraction : MonoBehaviour
     [SerializeField] private GameObject _FirstDoor;
     [SerializeField] private GameObject _SecondDoor;
     [SerializeField] private GameObject _ThirdDoor;
-
-    private Door _door;
+    [SerializeField] private PickUpCoin _PickUpCoin;
+    private Door _firstDoor;
+    private Door _secondDoor;
+    private Door _thirdDoor;
     private bool _isOnTrigger;
-    private bool _hasOpened;  // Variabilă de control pentru o singură deschidere
+    private bool _hasOpened;
 
     private void Start()
     {
         if (_FirstDoor != null)
         {
-            _door = _FirstDoor.GetComponent<Door>();
+            _firstDoor = _FirstDoor.GetComponent<Door>();
+            _secondDoor = _SecondDoor.GetComponent<Door>();
+            _thirdDoor = _ThirdDoor.GetComponent<Door>();
         }
     }
 
@@ -23,6 +27,14 @@ public class PlayerDoorInteraction : MonoBehaviour
         if (other.CompareTag("OpenFirstDoor"))
         {
             _isOnTrigger = true;
+        }
+        if (other.CompareTag("Finish")&&_PickUpCoin.CoinCounter==2)
+        {
+            _secondDoor.OpenDoor();
+        }
+        if (other.CompareTag("Finish") && _PickUpCoin.CoinCounter == 12)
+        {
+            _thirdDoor.OpenDoor();
         }
     }
 
@@ -39,7 +51,7 @@ public class PlayerDoorInteraction : MonoBehaviour
 
         if (_isOnTrigger && Input.GetKeyDown(KeyCode.E) && !_hasOpened)
         {
-            _door.OpenDoor();
+            _firstDoor.OpenDoor();
             _hasOpened = true; 
         }
     }
