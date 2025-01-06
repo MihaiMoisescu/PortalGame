@@ -16828,6 +16828,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -425.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1499180255146668387, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
+      propertyPath: _FirstDoor
+      value: 
+      objectReference: {fileID: 132024668}
+    - target: {fileID: 1499180255146668387, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
+      propertyPath: _ThirdDoor
+      value: 
+      objectReference: {fileID: 186695293}
+    - target: {fileID: 1499180255146668387, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
+      propertyPath: _PickUpCoin
+      value: 
+      objectReference: {fileID: 1737970416}
+    - target: {fileID: 1499180255146668387, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
+      propertyPath: _SecondDoor
+      value: 
+      objectReference: {fileID: 1504118358}
     - target: {fileID: 1679015810684652507, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -16887,10 +16903,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 975877459504982353, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1737970414}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
 --- !u!1001 &429263851
 PrefabInstance:
@@ -25086,33 +25099,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3264541043932965241, guid: 5be80a68980804b4e90755c0315c8c5f, type: 3}
   m_PrefabInstance: {fileID: 2116948978}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1737970404 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 975877459504982353, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
-  m_PrefabInstance: {fileID: 421532966}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1737970414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737970404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd260b923df2314d9c0fcfc6570dfff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _FirstDoor: {fileID: 132024668}
-  _SecondDoor: {fileID: 1504118358}
-  _ThirdDoor: {fileID: 186695293}
-  _PickUpCoin: {fileID: 1737970416}
 --- !u!114 &1737970416 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6561000234112565763, guid: 576aa509b99e9da4da2f767184df2001, type: 3}
   m_PrefabInstance: {fileID: 421532966}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737970404}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35d3ac6a46aab1e4d98c2ef038f677cd, type: 3}
