@@ -405,6 +405,7 @@ MonoBehaviour:
   portalSurfaceLayer:
     serializedVersion: 2
     m_Bits: 64
+  _audioClip: {fileID: 8300000, guid: 9e27d6a5bc578984b90d1ec2b9cfedd0, type: 3}
 --- !u!1001 &68149409945419170
 PrefabInstance:
   m_ObjectHideFlags: 0
