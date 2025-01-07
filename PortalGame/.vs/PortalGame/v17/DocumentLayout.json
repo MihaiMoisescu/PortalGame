@@ -3,7 +3,27 @@
   "WorkspaceRootPath": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\cursorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\scripts\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\nextlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\nextlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\scripts\\portalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\portalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\scripts\\scenehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|d:\\scoala\\an 3\\sem 1\\iocu\\portalgame\\portalgame\\assets\\musicplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\musicplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\assets\\cursorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4AB847A-0832-67D9-290A-9D8050686736}|Assembly-CSharp.csproj|solutionrelative:assets\\cursorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,6 +43,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerInteraction.cs",
+              "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\PlayerInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerInteraction.cs",
+              "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\PlayerInteraction.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerInteraction.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:12:05.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PortalManager.cs",
+              "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\PortalManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PortalManager.cs",
+              "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\PortalManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PortalManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:11:22.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SceneHandler.cs",
+              "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\SceneHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneHandler.cs",
+              "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\Scripts\\SceneHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:11:19.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NextLevel.cs",
+              "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\NextLevel.cs",
+              "RelativeDocumentMoniker": "Assets\\NextLevel.cs",
+              "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\NextLevel.cs",
+              "RelativeToolTip": "Assets\\NextLevel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:10:53.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MusicPlayer.cs",
+              "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\MusicPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\MusicPlayer.cs",
+              "ToolTip": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\MusicPlayer.cs",
+              "RelativeToolTip": "Assets\\MusicPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:01:26.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CursorController.cs",
               "DocumentMoniker": "D:\\SCOALA\\AN 3\\SEM 1\\IOCU\\PortalGame\\PortalGame\\Assets\\CursorController.cs",
               "RelativeDocumentMoniker": "Assets\\CursorController.cs",
@@ -30,8 +115,7 @@
               "RelativeToolTip": "Assets\\CursorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T14:45:38.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T14:45:38.369Z"
             }
           ]
         }

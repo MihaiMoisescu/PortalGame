@@ -33,7 +33,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             _secondDoor.OpenDoor();
         }
-        if (other.CompareTag("Finish") && _PickUpCoin.CoinCounter == 12)
+        if (other.CompareTag("FinishLevel1") && _PickUpCoin.CoinCounter == 12)
         {
             _thirdDoor.OpenDoor();
         }

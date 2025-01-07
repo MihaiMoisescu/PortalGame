@@ -17,6 +17,7 @@ TagManager:
   - SmallDoor
   - OpenSecondDoor
   - FinishLevel2
+  - FinishLevel1
   layers:
   - Default
   - TransparentFX
