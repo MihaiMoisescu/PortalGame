@@ -677,8 +677,8 @@ MonoBehaviour:
   m_text: '- Movement: W A S D
 
 
-    - Portal Spawning: Left Click (Orange Portal),
-    Right Click (Blue Portal)
+    - Portal Spawning: Right Click (Orange Portal),
+    Left Click (Blue Portal)
 
 
     - Interact with Objects: Press E
