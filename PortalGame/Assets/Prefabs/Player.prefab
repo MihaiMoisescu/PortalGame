@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 3574814554866753967}
   - component: {fileID: 7617363116734867048}
   - component: {fileID: 6561000234112565763}
-  - component: {fileID: 1499180255146668387}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -199,22 +198,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinText: {fileID: 0}
---- !u!114 &1499180255146668387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975877459504982353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd260b923df2314d9c0fcfc6570dfff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _FirstDoor: {fileID: 0}
-  _SecondDoor: {fileID: 0}
-  _ThirdDoor: {fileID: 0}
-  _PickUpCoin: {fileID: 0}
 --- !u!1 &5403606662875999350
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,8 +383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   portalAPrefab: {fileID: 4535739403262957234, guid: 4881bca0ba51dbf4cb4035712e013f5e, type: 3}
   portalBPrefab: {fileID: 143155751742628277, guid: e9111c8cf7bfb88499c05bec5c442ebf, type: 3}
-  portalAOrbPrefab: {fileID: 111136925433684864, guid: 7a93f274fa4dfe44cbb0f88c8776359b, type: 3}
-  portalBOrbPrefab: {fileID: 9104737082330760555, guid: 574ec587fc1a78f49a2c33924b7609ac, type: 3}
+  portalAOrbPrefab: {fileID: 8249502862716961518, guid: fc865a8a7bcf9b249807be008d6e7da5, type: 3}
+  portalBOrbPrefab: {fileID: 1668498761056041401, guid: 79791f4e783bbcc41abef0439a77785f, type: 3}
   portalSurfaceLayer:
     serializedVersion: 2
     m_Bits: 64

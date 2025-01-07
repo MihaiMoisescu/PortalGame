@@ -11,7 +11,7 @@ public class PortalOrb : MonoBehaviour
     private GameObject otherPortal;
     private GameObject currentPortal;
 
-    private float speed = 35f;
+    private float speed = 45f;
 
     public void Initialize(Vector3 targetPosition, Vector3 targetNormal, GameObject portalPrefab, GameObject otherPortal, GameObject currentPortal)
     {
